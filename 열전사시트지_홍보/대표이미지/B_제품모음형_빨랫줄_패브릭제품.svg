@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 100 3000 780" width="3000" height="780">
+  <title>열전사 시트지 — 패브릭 제품 모음</title>
+  <style>
+    .l { fill: none; stroke: #000; stroke-width: 10; stroke-linecap: round; stroke-linejoin: round; }
+    .s { fill: #000; }
+  </style>
+  <defs>
+    <path id="heart" d="M0 30C-60-10-80-60-45-85C-20-102 0-85 0-65C0-85 20-102 45-85C80-60 60-10 0 30Z"/>
+    <path id="star" d="M0-45L11.2-15.4L42.8-13.9L18.1 5.9L26.5 36.4L0 19L-26.5 36.4L-18.1 5.9L-42.8-13.9L-11.2-15.4Z"/>
+    <path id="sparkle" d="M0-42Q6-6 42 0Q6 6 0 42Q-6 6-42 0Q-6-6 0-42Z"/>
+    <rect id="pin" x="-14" y="-40" width="28" height="80" rx="7"/>
+    <g id="tee">
+      <path d="M-90-270Q0-190 90-270L230-235L330-110L255-50L195-105L195 300Q0 315-195 300L-195-105L-255-50L-330-110L-230-235Z"/>
+      <path d="M-68-263Q0-205 68-263"/>
+      <path d="M300-140L228-78"/>
+      <path d="M-300-140L-228-78"/>
+    </g>
+  </defs>
+
+  <!-- 빨랫줄 -->
+  <path class="l" d="M80 230Q1500 380 2920 230"/>
+  <circle class="l" cx="80" cy="230" r="16"/>
+  <circle class="l" cx="2920" cy="230" r="16"/>
+
+  <!-- 1. 티셔츠 -->
+  <use class="l" style="stroke-width:11.8" xlink:href="#tee" transform="translate(450 505) scale(.85)"/>
+  <use class="s" xlink:href="#star" transform="translate(450 520) scale(1.7)"/>
+  <use class="l" xlink:href="#pin" transform="translate(262 268)"/>
+  <use class="l" xlink:href="#pin" transform="translate(638 292)"/>
+
+  <!-- 2. 아기 바디수트 -->
+  <path class="l" d="M940 320Q1000 362 1060 320L1120 336L1165 412L1120 442L1095 418V570Q1095 610 1060 628L1036 660H964L940 628Q905 610 905 570V418L880 442L835 412L880 336Z"/>
+  <circle class="l" cx="980" cy="640" r="7"/>
+  <circle class="l" cx="1020" cy="640" r="7"/>
+  <ellipse class="s" cx="1000" cy="540" rx="44" ry="35"/>
+  <circle class="s" cx="955" cy="484" r="17"/>
+  <circle class="s" cx="984" cy="463" r="17"/>
+  <circle class="s" cx="1016" cy="463" r="17"/>
+  <circle class="s" cx="1045" cy="484" r="17"/>
+  <use class="l" xlink:href="#pin" transform="translate(890 312)"/>
+  <use class="l" xlink:href="#pin" transform="translate(1110 318)"/>
+
+  <!-- 3. 에코백 -->
+  <path class="l" d="M1430 440C1430 262 1570 262 1570 440"/>
+  <path class="l" d="M1462 440C1462 318 1538 318 1538 440"/>
+  <path class="l" d="M1355 440H1645L1658 790H1342Z"/>
+  <use class="s" xlink:href="#heart" transform="translate(1500 670) scale(1.45)"/>
+
+  <!-- 4. 카페 앞치마 -->
+  <path class="l" d="M1950 410Q1950 286 2000 286Q2050 286 2050 410"/>
+  <path class="l" d="M1928 410H2072L2078 505Q2140 510 2152 526V815Q2000 838 1848 815V526Q1860 510 1922 505Z"/>
+  <path class="l" d="M1848 535Q1798 552 1785 615"/>
+  <path class="l" d="M2152 535Q2202 552 2215 615"/>
+  <path class="l" d="M1925 690H2075V760Q2000 772 1925 760Z"/>
+  <path class="s" d="M1955 560H2045L2035 646Q2033 662 2017 662H1983Q1967 662 1965 646Z"/>
+  <path class="l" d="M2042 580Q2076 580 2073 607Q2069 632 2038 632" style="stroke-width:12"/>
+  <path class="l" d="M1985 535q-12-12 0-24q12-12 0-24"/>
+  <path class="l" d="M2015 535q-12-12 0-24q12-12 0-24"/>
+
+  <!-- 5. 모자 -->
+  <path class="l" d="M2432 480Q2440 330 2560 318Q2682 330 2690 480Z"/>
+  <path class="l" d="M2690 480Q2795 488 2840 512Q2790 534 2688 516"/>
+  <path class="l" d="M2560 320Q2584 400 2576 480"/>
+  <circle class="l" cx="2560" cy="314" r="11"/>
+  <use class="s" xlink:href="#star" transform="translate(2500 420) scale(.75)"/>
+  <use class="l" xlink:href="#pin" transform="translate(2560 282)"/>
+
+  <use class="l" xlink:href="#sparkle" transform="translate(1260 190) scale(.8)"/>
+  <use class="l" xlink:href="#sparkle" transform="translate(1755 175)"/>
+  <use class="l" xlink:href="#sparkle" transform="translate(2300 165) scale(.7)"/>
+</svg>

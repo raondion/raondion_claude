@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 220 3000 800" width="3000" height="800">
+  <title>열전사 시트지 — 커팅, 다림질, 티셔츠 완성</title>
+  <style>
+    .l { fill: none; stroke: #000; stroke-width: 10; stroke-linecap: round; stroke-linejoin: round; }
+    .cut { stroke-dasharray: 26 20; }
+    .s { fill: #000; }
+  </style>
+  <defs>
+    <path id="heart" d="M0 30C-60-10-80-60-45-85C-20-102 0-85 0-65C0-85 20-102 45-85C80-60 60-10 0 30Z"/>
+    <path id="star" d="M0-45L11.2-15.4L42.8-13.9L18.1 5.9L26.5 36.4L0 19L-26.5 36.4L-18.1 5.9L-42.8-13.9L-11.2-15.4Z"/>
+    <path id="sparkle" d="M0-42Q6-6 42 0Q6 6 0 42Q-6 6-42 0Q-6-6 0-42Z"/>
+    <g id="tee">
+      <path d="M-90-270Q0-190 90-270L230-235L330-110L255-50L195-105L195 300Q0 315-195 300L-195-105L-255-50L-330-110L-230-235Z"/>
+      <path d="M-68-263Q0-205 68-263"/>
+      <path d="M300-140L228-78"/>
+      <path d="M-300-140L-228-78"/>
+    </g>
+  </defs>
+
+  <!-- 1. 시트지: 커팅 라인(점선)과 벗겨지는 모서리 -->
+  <g>
+    <path class="l" d="M330 330H870V730L750 870H330Z"/>
+    <path class="l" d="M870 730L750 870Q772 772 870 730Z"/>
+    <path class="l cut" d="M600 662C504 598 472 470 528 430C592 403 600 430 600 462C600 430 608 403 672 430C728 470 696 598 600 662Z"/>
+    <use class="l cut" xlink:href="#star" transform="translate(440 440)"/>
+    <use class="l cut" xlink:href="#star" transform="translate(770 470)"/>
+    <!-- 위딩 후크 -->
+    <path class="l" d="M772 600Q748 586 760 566L786 548"/>
+    <path class="l" d="M786 548L930 420" style="stroke-width:26"/>
+  </g>
+
+  <!-- 화살표 1 -->
+  <path class="l" d="M985 600Q1070 535 1155 600"/>
+  <path class="l" d="M1112 568L1157 602L1100 616"/>
+
+  <!-- 2. 다리미 + 열 -->
+  <g>
+    <path class="l" d="M1255 705Q1300 585 1440 575H1710Q1745 575 1745 615V705Z"/>
+    <path class="l" d="M1240 705H1760L1752 737H1250Z"/>
+    <path class="l" d="M1450 575L1470 482Q1478 450 1510 450H1700Q1730 450 1728 482L1722 575"/>
+    <path class="l" d="M1520 575L1532 514H1662L1668 575"/>
+    <circle class="l" cx="1612" cy="640" r="24"/>
+    <path class="l" d="M1385 772q20 15 0 30q-20 15 0 30q20 15 0 30"/>
+    <path class="l" d="M1500 772q20 15 0 30q-20 15 0 30q20 15 0 30"/>
+    <path class="l" d="M1615 772q20 15 0 30q-20 15 0 30q20 15 0 30"/>
+    <path class="l" d="M1215 900Q1500 922 1785 900"/>
+  </g>
+
+  <!-- 화살표 2 -->
+  <path class="l" d="M1845 600Q1930 535 2015 600"/>
+  <path class="l" d="M1972 568L2017 602L1960 616"/>
+
+  <!-- 3. 완성된 티셔츠 (검정 = 붙인 시트지) -->
+  <use class="l" style="stroke-width:8.7" xlink:href="#tee" transform="translate(2500 625) scale(1.15)"/>
+  <use class="s" xlink:href="#heart" transform="translate(2500 625) scale(1.35)"/>
+  <use class="s" xlink:href="#star" transform="translate(2392 500) scale(.55)"/>
+  <use class="s" xlink:href="#star" transform="translate(2612 690) scale(.45)"/>
+
+  <use class="l" xlink:href="#sparkle" transform="translate(2110 360)"/>
+  <use class="l" xlink:href="#sparkle" transform="translate(2890 400) scale(.8)"/>
+  <use class="l" xlink:href="#sparkle" transform="translate(2880 900) scale(.6)"/>
+</svg>
